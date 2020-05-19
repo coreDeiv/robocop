@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 5rem;
+}
+
+div {
+  width: 40vw;
+  height: 50vh;
+  background: #ccc;
+  position: relative;
+  z-index: 100;
+  border-radius: 100px 100px 0 0;
+  -webkit-box-shadow: inset 10px 5px 26px -10px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 10px 5px 26px -10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 978px) {
+  div {
+    width: 50vw;
+  }
+}
+
+div:after {
+  content: '';
+  position: absolute;
+  background: #000;
+  top: 65%;
+  left: 50%;
+  width: 85%;
+  height: 20%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 40px;
+}
+
+div:before {
+  content: '';
+  position: absolute;
+  width: 96%;
+  height: 25vh;
+  top: 125%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#a28476), to(#a28476)), -webkit-gradient(linear, left top, right top, from(#fee3c7), to(#fee3c7)), -webkit-gradient(linear, left top, left bottom, from(#000), to(#000));
+  background-image: linear-gradient(90deg, #a28476, #a28476), linear-gradient(90deg, #fee3c7, #fee3c7), linear-gradient(180deg, #000, #000);
+  background-size: 70% 10%, 90% 70%, 100% 100%;
+  background-position: center center, center top, center top;
+  background-repeat: no-repeat;
+  border-radius: 0 0 15px 15px;
+}
+/*# sourceMappingURL=styles.css.map */
